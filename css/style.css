@@ -1,0 +1,96 @@
+
+	/*
+	https://autoprefixer.github.io/
+	*/
+
+section {
+	margin-top : 20px;
+	margin-bottom : 10px;
+}
+.housings {
+	background-color: #F2F2F2;
+}
+
+.popular {
+	background-color: #F2F2F2;
+}
+
+.activities {
+	background-color: #F2F2F2;
+} 
+
+header > h1 {
+	color : #0065fc;
+	justify-content: left;
+}
+
+header > menu {
+	justify-content: right;
+	float : left;
+}
+.Nav {
+	justify-content: right;
+}
+h2 {
+	font-weight: bold;
+}
+
+
+body {
+	background-color: white;
+	inline-size : 992px;
+
+}
+ul {
+	display : block;
+	float :left; 
+}
+
+.Card {
+	display: block;
+}
+.descriptionCard {
+	display: block;
+	padding: 5px;
+}
+
+.filters {
+	display: block;
+}
+
+.Flinks{
+	float: left;
+}
+
+footer > div {
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #F2F2F2;
+  }
+  
+.flex-container > div {
+	background-color: #F2F2F2;
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 14px;
+}
