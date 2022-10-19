@@ -15,17 +15,19 @@
 	<body>
     <header>
       <div class="Nav">
-        <a href="./"><h1 font="fa fa-font-awesome">Booki</h1></a>
+        <a href="./"><h2>Booki</h2></a>
         <menu type="toolbar">
-          <menuitem label="hotels"><a href="#">Hébergements</a></menuitem>
-          <menuitem label="activities"><a href="#">Activités</a></menuitem>
+          <li label="hotels"><a href="#">Hébergements</a></li>
+          <li label="activities"><a href="#">Activités</a></li>
         </menu>
       </div>
     </header>
     
     <section class="Search">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre ville ou pleine nature</p><br>
+      <div id="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou pleine nature</p>
+      </div>
         <form>
           <input type="text" id="city" name="searchC">
           <button type="submit">Rechercher</button>
@@ -33,13 +35,25 @@
         <br>
         <div class="filters">
           <h2>Filtres</h2>
-          <button>Economique</button>
-          <button>Familial</button>
-          <button>Romantique</button>
-          <button>Animaux autorisés</button>
+          <div>
+            <input type="checkbox" name="ecoFilter" id="ecoFilter" />
+            <label for="ecoFilter">$ Economique</label>
+          </div>
+          <div>
+            <input type="checkbox" name="familyFilter" id="familyFilter" />
+            <label for="familyFilter"> Familial</label>
+          </div>
+          <div>
+            <input type="checkbox" name="coupleFilter" id="coupleFilter" />
+            <label for="coupleFilter"> Romantique</label>
+          </div>
+          <div>
+            <input type="checkbox" name="petFilter" id="petFilter" />
+            <label for="petFilter"> Animaux autorisés</label>
+          </div>
          </div>
          <br>
-         <img src='#' class="image" alt="info">
+         <i class="fa fa-circle-info" alt="info"></i>
          <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
     <section class="housings">
@@ -100,12 +114,12 @@
             </div>
           </div>
         </div>
-        <button id="Hplus">Afficher plus</button>
+        <a href="#" id="Hplus">Afficher plus</a>
     </section>
     
     <section class="popular">
       <h2>Les plus populaires </h2>
-      <img src='#' class="image" alt="star"><br>
+      <i class="fa fa-star" alt="star"></i>
       <div class="flex-container" id="P">
       <div class="Card" id="P1">
         <div class="imageCard">
