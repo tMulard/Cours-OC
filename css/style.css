@@ -2,11 +2,275 @@
 	/*
 	https://autoprefixer.github.io/
 	*/
+
+
 /*
+  I       I
+  I       I
+  I       I
+  IIIIIIIII
+  I       I
+  I       I
+  I       I
+  I       I
+*/  
+
+header > h2 {
+	color : #0065fc;
+	justify-content: left;
+}
+
+menu {
+	justify-content: right;
+	float : left;
+}
+
+menu > a {
+	color: black;
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+menu > a:hover {
+	color: #0065fc;
+	font-weight: 500;
+}
+
+#hotelLink {
+	left: 36.22%;
+	right: 34.12%;
+}
+
+#activityLink {
+	left: 83.46%;
+	right: 0%;
+}
+
+.Nav {
+	justify-content: right;
+}
+/*
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+  I   I
+  I   I
+  I   I
+  IIII
+*/  
+
+body {
+	background-color: white;
+	/*inline-size : 992px;*/
+	margin : 0 auto;
+}
+
+	/*
 section {
 	margin-top : 20px;
 	margin-bottom : 10px;
 }*/
+
+h1 {
+	position: absolute;
+	width: 575px;
+	height: 26px;
+	left: 55px;
+	top: 126px;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+
+	color: #000000;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+
+.Search > i {
+	position: absolute;
+	left: 0%;
+	right: 84.94%;
+	top: 0%;
+	bottom: 0%;
+
+	background: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+}
+input {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	background: #FFFFFF;
+
+	border: 1px solid #F2F2F2;
+	border-radius: 15px;
+}
+button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px 16px;
+	gap: 10px;
+
+	position: absolute;
+	width: 132px;
+	height: 49px;
+	left: 341px;
+	top: 200px;
+	background: #0065FC;
+
+	border: 1px solid #0065FC;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.filters {
+	display: block;
+}
+#ecoFilter {
+	display: none;
+	width : 226px;
+	height : 50px;
+	border-radius : 25px;
+
+	background-color: #DEEBFF;
+	border : 2px solid;
+	border-color: #D9D9D9;
+
+	box-sizing: border-box;
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+  }
+  
+  #ecoFilter:checked + label {
+	background-color: #2369eb80;
+	color: #fff;
+  }
+
+  #familyFilter {
+	display: none;
+	width : 226px;
+	height : 50px;
+	border-radius : 25px;
+
+	background-color: #DEEBFF;
+	border : 2px solid;
+	border-color: #D9D9D9;
+
+	box-sizing: border-box;
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+  }
+  
+  #familyFilter:checked + label {
+	background-color: #2369eb80;
+	color: #fff;
+  }
+
+  #coupleFilter {
+	display: none;
+	width : 226px;
+	height : 50px;
+	border-radius : 25px;
+
+	background-color: #DEEBFF;
+	border : 2px solid;
+	border-color: #D9D9D9;
+
+	box-sizing: border-box;
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+  }
+  
+  #coupleFilter:checked + label {
+	background-color: #2369eb80;
+	color: #fff;
+  }
+
+  #petFilter {
+	display: none;
+	width : 226px;
+	height : 50px;
+	border-radius : 25px;
+
+	background-color: #DEEBFF;
+	border : 2px solid;
+	border-color: #D9D9D9;
+
+	box-sizing: border-box;
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+  }
+  
+  #petFilter:checked + label {
+	background-color: #2369eb80;
+	color: #fff;
+  }
+
+
+
+  label {
+	padding: 20px;
+	font-size: 25px;
+	border: 2px solid rgb(91, 94, 95);
+	border-radius: 30px;
+	color: #000;
+	cursor: pointer;
+	transition: .3s;
+  }
+  label:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+	color : rgb(64, 0, 128);
+  }
+ 
+
+/*
+     IIII
+   III   
+  III   
+  I   
+  I
+  I   
+  II      
+   III    
+     IIIII
+*/ 
+
+
+
 .housings {
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -37,32 +301,6 @@ section {
 	bottom: 0%;
 } 
 
-header > h1 {
-	color : #0065fc;
-	justify-content: left;
-}
-
-header > menu {
-	justify-content: right;
-	float : left;
-}
-.Nav {
-	justify-content: right;
-}
-h2 {
-	font-weight: bold;
-}
-
-
-body {
-	background-color: white;
-	inline-size : 992px;
-	margin : 0 auto;
-}
-ul {
-	display : block;
-	float :left; 
-}
 
 .Card {
 	position: absolute;
@@ -92,20 +330,42 @@ ul {
 	border-radius: 0px 0px 20px 20px;
 }
 
-.filters {
-	display: block;
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+  }
+  
+.flex-container > div {
+	background-color: #F2F2F2;
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 14px;
 }
 
-.Flinks{
-	float: left;
-}
+ 
+/*
+  IIIIIIIIIIIII
+  I
+  I
+  IIIIIIIII
+  I
+  I
+  I
+  I
+*/  
 
 footer {
 	position: absolute;
 	left: 3.33%;
 	right: 3.68%;
-	top: 70%;
-	bottom: -10.84%;
+	top: 0%;
+	bottom: 0%;
 	background: #F2F2F2;
 }
 
@@ -268,138 +528,3 @@ footer > h2 {
 	line-height: 19px;
 	color: #000000;
 }
-
-
-.flex-container {
-	display: flex;
-	flex-wrap: nowrap;
-	background-color: #F2F2F2;
-	border-radius: 20px;
-  }
-  
-.flex-container > div {
-	background-color: #F2F2F2;
-	width: 100px;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 14px;
-}
-
-
-
-
-
-#ecoFilter {
-	display: none;
-	width : 226px;
-	height : 50px;
-	border-radius : 25px;
-
-	background-color: #DEEBFF;
-	border : 2px solid;
-	border-color: #D9D9D9;
-
-	box-sizing: border-box;
-
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-  }
-  
-  #ecoFilter:checked + label {
-	background-color: #2369eb80;
-	color: #fff;
-  }
-
-  #familyFilter {
-	display: none;
-	width : 226px;
-	height : 50px;
-	border-radius : 25px;
-
-	background-color: #DEEBFF;
-	border : 2px solid;
-	border-color: #D9D9D9;
-
-	box-sizing: border-box;
-
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-  }
-  
-  #familyFilter:checked + label {
-	background-color: #2369eb80;
-	color: #fff;
-  }
-
-  #coupleFilter {
-	display: none;
-	width : 226px;
-	height : 50px;
-	border-radius : 25px;
-
-	background-color: #DEEBFF;
-	border : 2px solid;
-	border-color: #D9D9D9;
-
-	box-sizing: border-box;
-
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-  }
-  
-  #coupleFilter:checked + label {
-	background-color: #2369eb80;
-	color: #fff;
-  }
-
-  #petFilter {
-	display: none;
-	width : 226px;
-	height : 50px;
-	border-radius : 25px;
-
-	background-color: #DEEBFF;
-	border : 2px solid;
-	border-color: #D9D9D9;
-
-	box-sizing: border-box;
-
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-  }
-  
-  #petFilter:checked + label {
-	background-color: #2369eb80;
-	color: #fff;
-  }
-
-
-
-  label {
-	padding: 20px;
-	font-size: 25px;
-	border: 2px solid rgb(91, 94, 95);
-	border-radius: 30px;
-	color: #000;
-	cursor: pointer;
-	transition: .3s;
-  }
-  label:hover {
-	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
-	color : rgb(64, 0, 128);
-  }
-  

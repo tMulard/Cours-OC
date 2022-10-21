@@ -17,8 +17,8 @@
       <div class="Nav">
         <a href="./"><h2>Booki</h2></a>
         <menu type="toolbar">
-          <li label="hotels"><a href="#">Hébergements</a></li>
-          <li label="activities"><a href="#">Activités</a></li>
+          <li label="hotels"><a href="#" id="hotelLink">Hébergements</a></li>
+          <li label="activities"><a href="#" id="activityLink">Activités</a></li>
         </menu>
       </div>
     </header>
@@ -29,7 +29,8 @@
         <p>En plein centre ville ou pleine nature</p>
       </div>
         <form>
-          <input type="text" id="city" name="searchC">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="city" name="searchCity">
           <button type="submit">Rechercher</button>
         </form>
         <br>
@@ -58,7 +59,7 @@
       </section>
     <section class="housings">
       <h2>Hébergements à Marseille</h2><br>
-      <div class="flex-container" id="H">
+      <div class="flex-container" id="Hotel">
     			<div class="Card" id="H1">
             <div class="imageCard">
               <img src='images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg' class="image" alt="link_button">
@@ -120,7 +121,7 @@
     <section class="popular">
       <h2>Les plus populaires </h2>
       <i class="fa fa-star" alt="star"></i>
-      <div class="flex-container" id="P">
+      <div class="flex-container" id="Popular">
       <div class="Card" id="P1">
         <div class="imageCard">
           <img src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' class="image" alt="link_button">
@@ -153,7 +154,7 @@
 
     <section class="activities">
       <h2>Activités à Marseille</h2><br>
-      <div class="flex-container" id="A">
+      <div class="flex-container" id="Activity">
       <div class="Card" id="A1">
         <div class="imageCard">
           <img src='images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' class="image" alt="link_button">
