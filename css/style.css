@@ -2,21 +2,39 @@
 	/*
 	https://autoprefixer.github.io/
 	*/
-
+/*
 section {
 	margin-top : 20px;
 	margin-bottom : 10px;
-}
+}*/
 .housings {
 	background-color: #F2F2F2;
+	border-radius: 20px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
 }
 
 .popular {
 	background-color: #F2F2F2;
+	border-radius: 20px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
 }
 
 .activities {
 	background-color: #F2F2F2;
+	border-radius: 20px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
 } 
 
 header > h1 {
@@ -47,12 +65,31 @@ ul {
 }
 
 .Card {
-	display: block;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
 	border-radius: 20px;
 }
-.descriptionCard {
-	display: block;
-	padding: 5px;
+
+.imageCard {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.descriptionCard {	
+	position: absolute;
+	height: 56px;
+	left: 0%;
+	right: 0%;
+	bottom: -0.49px;
+	background: #FFFFFF;
+	border-radius: 0px 0px 20px 20px;
 }
 
 .filters {
@@ -67,7 +104,7 @@ footer {
 	position: absolute;
 	left: 3.33%;
 	right: 3.68%;
-	top: 0%;
+	top: 70%;
 	bottom: -10.84%;
 	background: #F2F2F2;
 }
