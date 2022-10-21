@@ -27,7 +27,7 @@ menu {
 
 menu > a {
 	color: black;
-	position: absolute;
+	/* position: absolute; */
 	top: 0%;
 	bottom: 0%;
 	font-family: 'Raleway';
@@ -81,7 +81,7 @@ section {
 }*/
 
 h1 {
-	position: absolute;
+	/* position: absolute; */
 	width: 575px;
 	height: 26px;
 	left: 55px;
@@ -102,7 +102,7 @@ h2 {
 
 
 .Search > i {
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 84.94%;
 	top: 0%;
@@ -113,7 +113,7 @@ h2 {
 	border-radius: 15px 0px 0px 15px;
 }
 input {
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -130,7 +130,7 @@ button {
 	padding: 15px 16px;
 	gap: 10px;
 
-	position: absolute;
+	/* position: absolute; */
 	width: 132px;
 	height: 49px;
 	left: 341px;
@@ -156,7 +156,7 @@ button {
 
 	box-sizing: border-box;
 
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -180,7 +180,7 @@ button {
 
 	box-sizing: border-box;
 
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -204,7 +204,7 @@ button {
 
 	box-sizing: border-box;
 
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -228,7 +228,7 @@ button {
 
 	box-sizing: border-box;
 
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -274,7 +274,7 @@ button {
 .housings {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -284,7 +284,7 @@ button {
 .popular {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -294,7 +294,7 @@ button {
 .activities {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -303,7 +303,7 @@ button {
 
 
 .Card {
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -312,7 +312,7 @@ button {
 }
 
 .imageCard {
-	position: absolute;
+	/* position: absolute; */
 	left: 0%;
 	right: 0%;
 	top: 0%;
@@ -321,7 +321,7 @@ button {
 }
 
 .descriptionCard {	
-	position: absolute;
+	/* position: absolute; */
 	height: 56px;
 	left: 0%;
 	right: 0%;
@@ -361,12 +361,13 @@ button {
 */  
 
 footer {
-	position: absolute;
+	/* position: absolute; */
 	left: 3.33%;
 	right: 3.68%;
-	top: 0%;
-	bottom: 0%;
+	/*top: 0%;*/
+	bottom: 10.84%;
 	background: #F2F2F2;
+	max-height : 10%;
 }
 
 footer > div {
@@ -374,12 +375,12 @@ footer > div {
 }
 
 footer > h2 {
-	position: absolute;
+	/* position: absolute; */
 	left: 8.19%;
 	right: 86.46%;
 	top: 23.56%;
 	bottom: 65.45%;
-	
+	margin : 5px;
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 700;
@@ -390,7 +391,7 @@ footer > h2 {
 }
 
 #about1 {
-	position: absolute;
+	/* position: absolute; */
 	left: 8.19%;
 	right: 86.46%;
 	top: 23.56%;
@@ -404,7 +405,7 @@ footer > h2 {
 }
 
 #about2 {
-	position: absolute;
+	/* position: absolute; */
 	left: 8.19%;
 	right: 79.58%;
 	top: 45.03%;
@@ -418,7 +419,7 @@ footer > h2 {
 }
 
 #about3 {
-	position: absolute;
+	/* position: absolute; */
 	left: 8.19%;
 	right: 80.9%;
 	top: 61.26%;
@@ -432,7 +433,7 @@ footer > h2 {
 }
 
 #about4 {
-	position: absolute;
+	/* position: absolute; */
 	left: 8.19%;
 	right: 78.33%;
 	top: 77.49%;
@@ -446,7 +447,7 @@ footer > h2 {
 }
 
 #info1 {
-	position: absolute;
+	/* position: absolute; */
 	left: 37.64%;
 	right: 50.9%;
 	top: 23.56%;
@@ -460,7 +461,7 @@ footer > h2 {
 }
 
 #info2 {
-	position: absolute;
+	/* position: absolute; */
 	left: 37.64%;
 	right: 55.14%;
 	top: 45.03%;
@@ -474,7 +475,7 @@ footer > h2 {
 }
 
 #info3 {
-	position: absolute;
+	/* position: absolute; */
 	left: 37.64%;
 	right: 51.94%;
 	top: 61.26%;
@@ -488,7 +489,7 @@ footer > h2 {
 }
 
 #support1 {
-	position: absolute;
+	/* position: absolute; */
 	left: 65.69%;
 	right: 27.85%;
 	top: 23.56%;
@@ -502,7 +503,7 @@ footer > h2 {
 }
 
 #support2 {
-	position: absolute;
+	/* position: absolute; */
 	left: 65.69%;
 	right: 27.5%;
 	top: 45.03%;
@@ -516,7 +517,7 @@ footer > h2 {
 }
 
 #support3 {
-	position: absolute;
+	/* position: absolute; */
 	left: 65.69%;
 	right: 26.39%;
 	top: 61.26%;
