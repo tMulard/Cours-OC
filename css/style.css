@@ -174,8 +174,8 @@ p {
 form > button {
 	width: 15%;
 	height: 15%;
-	border-top-right-radius: 25%;
-	border-bottom-right-radius: 25%;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 	background: #0065FC;
 	border: 1px solid #0065FC;
 }
@@ -185,8 +185,8 @@ input {
 	background: #FFFFFF;
 	padding : 2%;
 	border: 1px solid #F2F2F2;
-	border-top-left-radius: 25%;
-	border-bottom-left-radius: 25%;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 }
 button {
 	max-width: 75%;
@@ -267,7 +267,12 @@ button {
 	padding : 20px 20px 0 20px;
 	margin: 1%;
 }
-
+.popularStar {
+	display : flex;
+	justify-content : space-between;
+	flex-direction : row;
+	padding-bottom : 20px;
+}
 .activities {
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -337,7 +342,7 @@ button {
 
 footer {
 	display : flex;
-	justify-content: space-between;
+	justify-content: left; /*space-between;*/
 	flex-direction : row;
 	align-items: center;
 	background: #F2F2F2;
@@ -346,6 +351,7 @@ footer {
 }
 
 footer > div {
+	padding-right: 20%;
 	margin-bottom: 5%;
 	display : block;
 	color: black;
