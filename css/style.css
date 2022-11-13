@@ -14,6 +14,12 @@ texte: Arial 15px
 
 */
 
+@font-face {
+	font-family: 'Raleway-bold';
+	src: url('../fonts/Raleway-Bold.ttf');
+	font-display: swap;
+  }  
+
 /*
 ______________________________________________________________________
 								COLORS
@@ -163,35 +169,60 @@ p {
 	border-radius: 15px 0px 0px 15px;
 }
 
-.Search > form {
+form {
 	display : flex;
-	justify-content: left;
 	flex-direction : row;
 	align-items: center;
-	max-height : 75%;
+	margin : 20px 0;
 }
 
-form > button {
-	width: 15%;
-	height: 15%;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
+form .locationIcon {
+	background : #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+	height : 42px;
+	width : 42px;
+	display : flex;
+	justify-content: center;
+	flex-direction : column;
+	align-items: center;
+	margin : 0;
+	padding : 0;
+	color : #000;
+	border: none;
+    cursor: default;
+    transition: none;
+}
+
+form .locationIcon:hover {
+	box-shadow: none;
+	color : #000;
+}
+
+form button {
+	height : 42px;
+	border-radius: 0px 15px 15px 0px;
 	background: #0065FC;
-	border: 1px solid #0065FC;
+	border: none;
+	color : white;
+	cursor : pointer;
+	padding : 0 25px;
 }
-input {
-	width: 33%;
-	height: 35%;
-	background: #FFFFFF;
-	padding : 2%;
+
+form button .search_icon {
+	display : none;
+}
+
+form input {
+	height : 40px;
+	width : 40%;
+	max-width : 300px;
 	border: 1px solid #F2F2F2;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
+	padding : 0 10px;
 }
+
 button {
 	max-width: 75%;
 	padding : 2%;
-	
 }
 
 .filters {
@@ -237,7 +268,15 @@ button {
   }
  
   @media screen and (max-width: 500px;) {
-
+	form button {
+		padding: 0 15px;
+	  }
+	  form button span {
+		display: none;
+	  }
+	  form button .search_icon {
+		display: block;
+	  }
   }
 
 /*
@@ -283,23 +322,151 @@ button {
 
 .Card {
 	display: block;
-	border-radius: 50px;
-	width: 37.5%;
-	height: 37.5%;
+	border-radius: 25px;
 }
 
-.imageCard > img {
-	border-top-left-radius: 50px;
+#image1 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+	
+}
+
+#image2 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image3 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image4 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image5 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image6 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image7 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image8 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image9 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image10 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image11 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image12 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image13 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#image14 {
+	border-top-left-radius: 25px;
 	border-top-right-radius: 50px;
-	max-height : 80px;
-	width : fit-content;
+	background-image :url("../images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
 }
 
-.descriptionCard {	
+#image15 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-image :url("../images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+
+.descriptionCard {
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;	
 	justify-content: left;
 	background-color: #FFFFFF;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
 	padding-right: 5px;
 	padding-left: 5px;
 	width : auto ;

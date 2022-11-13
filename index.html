@@ -55,9 +55,14 @@
         <p>En plein centre ville ou pleine nature</p>
       </div>
         <form>
-          <i class="fa-solid fa-location-dot"></i>
+          <label class="locationIcon" for="city">
+            <i class="fas fa-map-marker-alt fa-lg"></i>
+          </label>
           <input type="text" id="city" name="searchCity">
-          <button type="submit">Rechercher</button>
+          <button type="submit">
+            <i class="fas fa-search search_icon"></i>
+            <span>Rechercher</span>
+          </button>
         </form>
         <br>
         <div class="filters">
@@ -100,8 +105,7 @@
       <h2>Hébergements à Marseille</h2><br>
       <div class="flex-container" id="Hotel">
     			<div class="Card" id="H1">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image1">
             </div>
             <div class="descriptionCard">
               <h2>Auberge La Cannebière</h2>
@@ -112,8 +116,7 @@
             </div>
           </div>
           <div class="Card" id="H2">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image2">
             </div>
             <div class="descriptionCard">
               <h2>Hôtel du port</h2>
@@ -124,8 +127,7 @@
             </div>
           </div>
           <div class="Card" id="H3">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image3">
             </div>
             <div class="descriptionCard">
               <h2>Hôtel Les mouettes</h2>
@@ -136,8 +138,7 @@
             </div>
           </div>
           <div class="Card" id="H4">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image4">
             </div>
             <div class="descriptionCard">
               <h2>Hôtel de la mer</h2>
@@ -148,8 +149,7 @@
             </div>
           </div>
           <div class="Card" id="H5">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image5">
             </div>
             <div class="descriptionCard">
               <h2>Auberge Le Panier</h2>
@@ -160,8 +160,7 @@
             </div>
           </div>
           <div class="Card" id="H6">
-            <div class="imageCard">
-              <img src='images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg' class="image" alt="link_button">
+            <div class="imageCard" id="image6">
             </div>
             <div class="descriptionCard">
               <h2>Hôtel chez Amina</h2>
@@ -182,8 +181,7 @@
       </div>
       <div class="flex-container" id="Popular">
       <div class="Card" id="P1">
-        <div class="imageCard">
-          <img src='images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image7">
         </div>
         <div class="descriptionCard">
           <h2>Hôtel Le soleil du matin</h2>
@@ -194,8 +192,7 @@
         </div>
       </div>
       <div class="Card" id="P2">
-        <div class="imageCard">
-          <img src='images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image8">
         </div>
         <div class="descriptionCard">
           <h2>Au coeur de l'eau Chambres d'hôtes</h2>
@@ -206,8 +203,7 @@
         </div>
       </div>
       <div class="Card" id="P3">
-        <div class="imageCard">
-          <img src='images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image9">
         </div>
         <div class="descriptionCard">
           <h2>Hôtel Tout bleu et blanc</h2>
@@ -224,48 +220,42 @@
       <h2>Activités à Marseille</h2><br>
       <div class="flex-container" id="Activity">
       <div class="Card" id="A1">
-        <div class="imageCard">
-          <img src='images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image10">
         </div>
         <div class="descriptionCard">
           <h2>Vieux Port</h2>
         </div>
       </div>
       <div class="Card" id="A2">
-        <div class="imageCard">
-          <img src='images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image11">
         </div>
         <div class="descriptionCard">
           <h2>Fort de Pomègues</h2>
         </div>
       </div>
       <div class="Card" id="A3">
-        <div class="imageCard">
-          <img src='images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image12">
         </div>
         <div class="descriptionCard">       
           <h2>Îles du Frioul</h2>
         </div>
       </div>
       <div class="Card" id="A4">
-        <div class="imageCard">
-          <img src='images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image13">
         </div>
         <div class="descriptionCard">
           <h2>Parc National des Calanques</h2>
         </div>  
       </div>
       <div class="Card" id="A5">
-        <div class="imageCard">
-          <img src='images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image14">
         </div>
         <div class="descriptionCard">
           <h2>Notre-Dame-de-la-Garde</h2>
         </div>
       </div>
       <div class="Card" id="A6">
-        <div class="imageCard">    
-          <img src='images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg' class="image" alt="link_button">
+        <div class="imageCard" id="image15">    
         </div>
         <div class="descriptionCard">    
           <h2>Parc Longchamp</h2>
