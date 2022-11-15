@@ -323,21 +323,17 @@ button {
 .Card {
 	display: block;
 	border-radius: 25px;
+	overflow: hidden;
 }
 
 #image1 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
 	min-width: 100px;
-	
 }
 
 #image2 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -345,8 +341,6 @@ button {
 }
 
 #image3 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -354,8 +348,6 @@ button {
 }
 
 #image4 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -363,8 +355,6 @@ button {
 }
 
 #image5 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -372,8 +362,6 @@ button {
 }
 
 #image6 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -381,8 +369,6 @@ button {
 }
 
 #image7 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -390,8 +376,6 @@ button {
 }
 
 #image8 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -399,8 +383,6 @@ button {
 }
 
 #image9 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -408,8 +390,6 @@ button {
 }
 
 #image10 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -417,8 +397,6 @@ button {
 }
 
 #image11 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -426,8 +404,6 @@ button {
 }
 
 #image12 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -435,8 +411,6 @@ button {
 }
 
 #image13 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -444,8 +418,6 @@ button {
 }
 
 #image14 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 50px;
 	background-image :url("../images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -453,8 +425,6 @@ button {
 }
 
 #image15 {
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background-image :url("../images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 	background-size: cover;
 	min-height: 100px;
@@ -462,9 +432,7 @@ button {
 }
 
 
-.descriptionCard {
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;	
+.descriptionCard {	
 	justify-content: left;
 	background-color: #FFFFFF;
 	padding-right: 5px;
