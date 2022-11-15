@@ -79,7 +79,7 @@ header menu li a:hover {
 	border-top : 3px solid #0065FC;
 	color: #0065fc;
 }
-@media screen and (max-width: 500px;) {
+@media screen and (max-width: 500px) {
 	header {
 	flex-direction: column;
 	padding: 20px 0 0;
@@ -136,20 +136,16 @@ body {
 }
 
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-bold', sans-serif;
 	font-style: normal;
-	font-weight: 700;
 	font-size: 22px;
 	line-height: 26px;
 	color: #000000;
 }
 
-h2 {
-	font-weight: bold;
-}
-p {
-	color : grey;
-}
+h2 {font-weight: bold;}
+
+p {color : grey;}
 
 .title {
 	color : #D9D9D9;
@@ -208,12 +204,10 @@ form button {
 	padding : 0 25px;
 }
 
-form button .search_icon {
-	display : none;
-}
+form button .search_icon {display : none;}
 
 form input {
-	height : 40px;
+	height : 42px;
 	width : 40%;
 	max-width : 300px;
 	border: 1px solid #F2F2F2;
@@ -225,36 +219,31 @@ button {
 	padding : 2%;
 }
 
-.filters {
-	padding : 20px 0;
-}
+.filters {padding : 20px 0;}
 
 .filterTitle {
 	display: inline-block;
 	font-weight: bold; 
 }
 
-.filterButton {
-	display : inline-block;
-}
+.filterButton {display : inline-block;}
 
-#ecoFilter, #familyFilter, #coupleFilter, #petFilter {
-	display: none;
-  }
+.filterButton > label > i {color : #0065fc;}
+
+#ecoFilter, #familyFilter, #coupleFilter, #petFilter {display: none;}
   
   #ecoFilter:checked + label,
    #familyFilter:checked + label,
     #coupleFilter:checked + label,
 	 #petFilter:checked + label {
-	background-color: #0065FC;
-	color: #fff;
+	background-color: #DEEBFF;
   }
 
 
   label {
 	padding: 10px;
 	margin : 5px 2px;
-	border: 2px solid rgb(91, 94, 95);
+	border: 2px solid #D9D9D9;
 	border-radius: 50px;
 	color: #000;
 	cursor: pointer;
@@ -265,9 +254,10 @@ button {
   label:hover {
 	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
 	color : rgb(64, 0, 128);
+	background-color: #DEEBFF;
   }
  
-  @media screen and (max-width: 500px;) {
+  @media screen and (max-width: 500px) {
 	form button {
 		padding: 0 15px;
 	  }
@@ -291,7 +281,11 @@ button {
      IIIII
 */ 
 
-
+.Hotels {
+	display : flex;
+	flex-direction : row;
+	align-items: space-between;
+}
 
 .housings {
 	background-color: #F2F2F2;
@@ -299,6 +293,8 @@ button {
 	padding : 20px 20px 0 20px;
 	margin: 1%;
 }
+
+.housings > a {padding-top: 5px;}
 
 .popular {
 	background-color: #F2F2F2;
@@ -319,117 +315,61 @@ button {
 	margin: 1%;
 } 
 
+#Hotel {justify-content: space-around;}
 
 .Card {
 	display: block;
-	border-radius: 25px;
+	border-radius: 20px;
 	overflow: hidden;
+	width : 30%;
+	min-width : 200px;
+	padding : 5px;
+	background-color: white;
+	margin : 10px;
 }
 
-#image1 {
-	background-image :url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
+.Card:hover {
+	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
 }
 
-#image2 {
-	background-image :url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+.imageCard {
 	background-size: cover;
-	min-height: 100px;
 	min-width: 100px;
+	min-height: 100px;
+	overflow : hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
-#image3 {
-	background-image :url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image1 {background-image :url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");}
 
-#image4 {
-	background-image :url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image2 {background-image :url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");}
 
-#image5 {
-	background-image :url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image3 {background-image :url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");}
 
-#image6 {
-	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image4 {background-image :url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");}
 
-#image7 {
-	background-image :url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image5 {background-image :url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");}
 
-#image8 {
-	background-image :url("../images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image6 {background-image :url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");}
 
-#image9 {
-	background-image :url("../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image7 {background-image :url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");}
 
-#image10 {
-	background-image :url("../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image8 {background-image :url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");}
 
-#image11 {
-	background-image :url("../images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image9 {background-image :url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");}
 
-#image12 {
-	background-image :url("../images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image10 {background-image :url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");}
 
-#image13 {
-	background-image :url("../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image11 {background-image :url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");}
 
-#image14 {
-	background-image :url("../images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image12 {background-image :url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");}
 
-#image15 {
-	background-image :url("../images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
-}
+#image13 {background-image :url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");}
+
+#image14 {background-image :url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");}
+
+#image15 {background-image :url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");}
 
 
 .descriptionCard {	
@@ -441,32 +381,30 @@ button {
 }
 .prix {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	flex-direction : row;
-	align-items: center;
+	align-items: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 .unitePrix {
 	color : black;
 	font-weight : bold;
 }
 
+.starRating {display:inline-block;}
+
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
   }
-  
-.flex-container > div {
-	background-color: #F2F2F2;
-	max-width: 37.5%;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-bottom : 5px;
-	text-align: center;
-}
 
-@media screen and (max-width: 500px;) {
-
+@media screen and (max-width: 500px) {
+	.Hotels {
+		display : flex;
+		flex-direction : column-reverse;
+	}
 }
  
 /*
@@ -500,9 +438,8 @@ footer > div {
 
 footer > h2 {
 	margin : 5px;
-	font-family: 'Raleway';
+	font-family: 'Raleway-bold';
 	font-style: normal;
-	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
 }
@@ -512,12 +449,11 @@ footer > div > li {
 }
 
 footer > div > li > a {
-	font-family: 'Raleway';
+	font-family: 'Raleway-bold';
 	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 }
-@media screen and (max-width: 500px;) {
+@media screen and (max-width: 500px) {
 
 }
