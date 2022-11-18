@@ -146,9 +146,13 @@ h1 {
 	font-size: 22px;
 	line-height: 26px;
 	color: #000000;
+	padding-bottom : 5px;
 }
 
-h2 {font-weight: bold;}
+h2 {
+	font-family : "Raleway-bold";
+	color : black;
+}
 
 p {color : grey;}
 
@@ -157,17 +161,42 @@ p {color : grey;}
 	padding : 20px 20px 0 20px;
 }
 .Search {
-	padding : 20px 20px 0 20px;
+	padding : 20px 20px 5px 20px;
 	display: inline-block;
 	align-items: center;
 	max-height: 35%;
 	width : 100%;
 }
 
-.Search > i {
+.Search span {
+	font-family: "Raleway";
+	color : black;
+	padding-right: 10px;
+}
+.Search .SearchButton {
+	font-family: "Raleway-bold";
+	color : white;
+	padding-right: 10px;
+}
+
+.infoSearch {
+	display : flex;
+	flex-direction : row;
+	align-items: left;
+}
+
+.infoSearch i {
 	background: #F2F2F2;
+	border: 1px solid #D9D9D9;
+	border-radius: 15px;
+	margin-right : 15px;
+	padding : 1px 4px;
+}
+
+.filterButton > label > i {
+	background: #DEEBFF;
 	border: 1px solid #F2F2F2;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 15px;
 }
 
 form {
@@ -204,10 +233,9 @@ form button {
 	border-radius: 0px 15px 15px 0px;
 	background: #0065FC;
 	border: none;
-	color : white;
+	color : #F2F2F2;
 	cursor : pointer;
 	padding : 0 25px;
-	font-family: "Raleway-bold";
 }
 
 form button .search_icon {display : none;}
@@ -256,6 +284,7 @@ button {
 	transition: .3s;
 	text-align: center;
 	display: inline-block;
+	font-family: "Raleway-bold";
   }
   label:hover {
 	box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
@@ -300,7 +329,9 @@ button {
 	margin: 1%;
 }
 
-.housings > a {padding-top: 5px;}
+.Hotels > .housings > a {
+	margin : 10px 0;
+}
 
 .popular {
 	background-color: #F2F2F2;
@@ -313,6 +344,7 @@ button {
 	justify-content : space-between;
 	flex-direction : row;
 	padding-bottom : 20px;
+	color : black;
 }
 
 .PopularFlex {
@@ -328,7 +360,10 @@ button {
 	margin: 1%;
 } 
 
-#Hotel {justify-content: space-around;}
+#Hotel {
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
 
 .Card {
 	display: block;
@@ -504,6 +539,7 @@ footer > h2 {
 	font-style: normal;
 	font-size: 18px;
 	line-height: 21px;
+	padding-bottom: 10px;
 }
 
 footer > div > li {
