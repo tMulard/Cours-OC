@@ -253,6 +253,7 @@ form input {
 button {
 	max-width: 75%;
 	padding : 2%;
+	font-family: 'Raleway';
 }
 
 .filters {padding : 20px 0;}
@@ -325,6 +326,9 @@ button {
 }
 
 .housings {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding : 20px 20px 0 20px;
@@ -363,7 +367,7 @@ button {
 
 #Hotel {
 	justify-content: space-around;
-	margin-bottom: 10px;
+	margin: 1%;
 }
 
 .Card {
@@ -506,20 +510,45 @@ button {
 	flex-wrap: wrap;
   }
 
-
+#Hplus {
+	font-family: 'Raleway-bold';
+}
 
   @media screen and (max-width: 1024px) {
 	.Hotels {
 			display : flex;
 			flex-direction : column;
+		}
+	.housings {
+		flex-wrap: wrap;
+		align-items: space-between;
+		padding-right : 20px;
+		margin : 1% auto;
+	}
+	.housings .Card{
+		margin : 1% auto;
 	}
 	.PopularFlex {
 			display: flex;
 			flex-direction: row;
 	}
+	.activities #Activity {
+		display: flex;
+		flex-direction: row;
+		align-items : space-between;
+	}
+	.activities #Activity .Card {
+		margin : 1% auto;
+		width : 23%;
+		min-width: auto;
+		margin : 0;
+	}
+	#Activity .Card .imageCard {
+		height : 200px;
+	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 	.Hotels {
 		display : flex;
 		flex-direction : column-reverse;
@@ -527,8 +556,18 @@ button {
 	.PopularFlex {
 		display: flex;
 		flex-direction: column;
+	}
+	.housings {
+		margin : 1% auto;
+		width : 100%;
+	}
+	.housings .Card {
+		margin : 1% auto;
+		width : 100%;
+	}
+	
 }
-}
+
  
 /*
   IIIIIIIIIIIII
@@ -591,5 +630,11 @@ footer > div > li > a {
 	footer {
 		display : flex;
 		flex-direction: column;
+	}
+	footer div {
+		width : 100%;
+	}
+	footer div ul {
+		margin : 1% auto;
 	}
 }
