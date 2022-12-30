@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-
-	<head>
+  <head>
     <title>Booki</title>
-    <meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
-    <meta name="description" content="Booki, site de réservation d'hébergements ou d'activités en tout genres.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='Stylesheet' href="css/reset.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Booki, site de réservation d'hébergements ou d'activités en tout genres."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel='Stylesheet' href="css/style.css">
-	</head>
+    <link rel="Stylesheet" href="css/style.css" />
+  </head>
 
-	<body>
+  <body>
     <!--
   I       I
   I       I
@@ -26,17 +25,17 @@
     <header>
       <div class="logo">
         <a href="#">
-          <img class="logo" src="./images/logo/Logo.png" alt="logo">
+          <img class="logo" src="./images/logo/Logo.png" alt="logo" />
         </a>
       </div>
       <div class="Nav">
-        <menu type="toolbar">
-          <li label="hotels"><a href="#" id="hotelLink">Hébergements</a></li>
-          <li label="activities"><a href="#" id="activityLink">Activités</a></li>
+        <menu>
+          <li><a href="#" id="hotelLink">Hébergements</a></li>
+          <li><a href="#" id="activityLink">Activités</a></li>
         </menu>
       </div>
     </header>
-    
+
     <!--
     IIII
     I   I
@@ -54,46 +53,52 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou pleine nature</p>
       </div>
-        <form>
-          <label class="locationIcon" for="city">
-            <i class="fas fa-map-marker-alt fa-lg"></i>
-          </label>
-          <input type="text" id="city" name="searchCity">
-          <button type="submit">
-            <i class="fas fa-search search_icon"></i>
-            <span class="SearchButton">Rechercher</span>
-          </button>
-        </form>
-        <br>
-        <div class="filters">
-          <span class="filterTitle">Filtres</span>
-          <div class="filterButton">
-            <input type="checkbox" name="ecoFilter" id="ecoFilter" />
-            <label for="ecoFilter"><i class="fa fa-money-bill-wave" alt="eco"></i> Economique</label>
-          </div>
-          <div class="filterButton">
-            <input type="checkbox" name="familyFilter" id="familyFilter" />
-            <label for="familyFilter"><i class="fa fa-user" alt="fam"></i> Familial</label>
-          </div>
-          <div class="filterButton">
-            <input type="checkbox" name="coupleFilter" id="coupleFilter" />
-            <label for="coupleFilter"><i class="fa fa-heart" alt="couple"></i> Romantique</label>
-          </div>
-          <div class="filterButton">
-            <input type="checkbox" name="petFilter" id="petFilter" />
-            <label for="petFilter"><i class="fa fa-dog" alt="pet"></i> Animaux autorisés</label>
-          </div>
-         </div>
-         <br>
-         <div class="infoSearch">
-          <div class="infoLogoContainer">
-            <i class="fa fa-info" alt="info"></i>
-          </div>
-           <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </div>
-      </section>
-      
-<!--
+      <form>
+        <label class="locationIcon" for="city">
+          <i class="fas fa-map-marker-alt fa-lg"></i>
+        </label>
+        <input type="text" id="city" name="searchCity" placeholder="Marseille, France"/>
+        <button type="submit">
+          <i class="fas fa-search search_icon"></i>
+          <span class="SearchButton">Rechercher</span>
+        </button>
+      </form>
+      <br />
+      <div class="filters">
+        <span class="filterTitle">Filtres</span>
+        <div class="filterButton">
+          <input type="checkbox" name="ecoFilter" id="ecoFilter" />
+          <label for="ecoFilter"
+            ><i class="fa fa-money-bill-wave"></i> Economique</label
+          >
+        </div>
+        <div class="filterButton">
+          <input type="checkbox" name="familyFilter" id="familyFilter" />
+          <label for="familyFilter"><i class="fa fa-user"></i> Familial</label>
+        </div>
+        <div class="filterButton">
+          <input type="checkbox" name="coupleFilter" id="coupleFilter" />
+          <label for="coupleFilter"
+            ><i class="fa fa-heart"></i> Romantique</label
+          >
+        </div>
+        <div class="filterButton">
+          <input type="checkbox" name="petFilter" id="petFilter" />
+          <label for="petFilter"
+            ><i class="fa fa-dog"></i> Animaux autorisés</label
+          >
+        </div>
+      </div>
+      <br />
+      <div class="infoSearch">
+        <div class="infoLogoContainer">
+          <i class="fa fa-info"></i>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
+
+    <!--
     IIII
    II   
   II   
@@ -104,13 +109,13 @@
    II    
     IIII
     -->
-  <div class="Hotels">
-    <section class="housings">
-      <h2>Hébergements à Marseille</h2><br>
-      <div class="flex-container" id="Hotel">
-    			<div class="Card" id="H1">
-            <div class="imageCard" id="image1">
-            </div>
+    <div class="Hotels">
+      <section class="housings">
+        <h2>Hébergements à Marseille</h2>
+        
+        <div class="flex-container" id="Hotel">
+          <div class="Card" id="H1">
+            <div class="imageCard" id="image1"></div>
             <div class="descriptionCard">
               <h2>Auberge La Cannebière</h2>
               <div class="prix">
@@ -122,13 +127,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
           <div class="Card" id="H2">
-            <div class="imageCard" id="image2">
-            </div>
+            <div class="imageCard" id="image2"></div>
             <div class="descriptionCard">
               <h2>Hôtel du port</h2>
               <div class="prix">
@@ -140,13 +144,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
           <div class="Card" id="H3">
-            <div class="imageCard" id="image3">
-            </div>
+            <div class="imageCard" id="image3"></div>
             <div class="descriptionCard">
               <h2>Hôtel Les mouettes</h2>
               <div class="prix">
@@ -158,13 +161,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
           <div class="Card" id="H4">
-            <div class="imageCard" id="image4">
-            </div>
+            <div class="imageCard" id="image4"></div>
             <div class="descriptionCard">
               <h2>Hôtel de la mer</h2>
               <div class="prix">
@@ -176,13 +178,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
           <div class="Card" id="H5">
-            <div class="imageCard" id="image5">
-            </div>
+            <div class="imageCard" id="image5"></div>
             <div class="descriptionCard">
               <h2>Auberge Le Panier</h2>
               <div class="prix">
@@ -194,13 +195,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
           <div class="Card" id="H6">
-            <div class="imageCard" id="image6">
-            </div>
+            <div class="imageCard" id="image6"></div>
             <div class="descriptionCard">
               <h2>Hôtel chez Amina</h2>
               <div class="prix">
@@ -212,122 +212,116 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star" style="color : lightgrey"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
               </div>
             </div>
           </div>
         </div>
         <a href="#" id="Hplus">Afficher plus</a>
-    </section>
-    
-    <section class="popular">
-      <div class="popularStar">
-        <h2>Les plus populaires </h2>
-        <i class="fa fa-chart-line" alt="trending"></i>
-      </div>
-      <div class="PopularFlex" id="Popular">
-      <div class="CardPopular" id="P1">
-        <div class="imageCardPopular" id="image7">
+      </section>
+
+      <section class="popular">
+        <div class="popularStar">
+          <h2>Les plus populaires</h2>
+          <i class="fa fa-chart-line"></i>
         </div>
-        <div class="descriptionCardPopular">
-          <div>
-            <h2>Hôtel Le soleil du matin</h2>
-            <div class="prix">
-              <p>Nuit à partir de 128</p>
-              <span class="unitePrix">€</span>
+        <div class="PopularFlex" id="Popular">
+          <div class="CardPopular" id="P1">
+            <div class="imageCardPopular" id="image7"></div>
+            <div class="descriptionCardPopular">
+              <div>
+                <h2>Hôtel Le soleil du matin</h2>
+                <div class="prix">
+                  <p>Nuit à partir de 128</p>
+                  <span class="unitePrix">€</span>
+                </div>
+              </div>
+              <div class="starRating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
+              </div>
             </div>
           </div>
-          <div class="starRating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star" style="color : lightgrey"></i>
-          </div>
-        </div>
-      </div>
-      <div class="CardPopular" id="P2">
-        <div class="imageCardPopular" id="image8">
-        </div>
-        <div class="descriptionCardPopular">
-          <div>
-            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-            <div class="prix">
-              <p>Nuit à partir de 71</p>
-              <span class="unitePrix">€</span>
+          <div class="CardPopular" id="P2">
+            <div class="imageCardPopular" id="image8"></div>
+            <div class="descriptionCardPopular">
+              <div>
+                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                <div class="prix">
+                  <p>Nuit à partir de 71</p>
+                  <span class="unitePrix">€</span>
+                </div>
+              </div>
+              <div class="starRating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
+              </div>
             </div>
           </div>
-          <div class="starRating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star" style="color : lightgrey"></i>
-          </div>
-        </div>
-      </div>
-      <div class="CardPopular" id="P3">
-        <div class="imageCardPopular" id="image9">
-        </div>
-        <div class="descriptionCardPopular">
-          <div>
-            <h2>Hôtel Tout bleu et blanc</h2>
-            <div class="prix">
-              <p>Nuit à partir de 68</p>
-              <span class="unitePrix">€</span>
+          <div class="CardPopular" id="P3">
+            <div class="imageCardPopular" id="image9"></div>
+            <div class="descriptionCardPopular">
+              <div>
+                <h2>Hôtel Tout bleu et blanc</h2>
+                <div class="prix">
+                  <p>Nuit à partir de 68</p>
+                  <span class="unitePrix">€</span>
+                </div>
+              </div>
+              <div class="starRating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" style="color: lightgrey"></i>
+              </div>
             </div>
           </div>
-          <div class="starRating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star" style="color : lightgrey"></i>
-          </div>
         </div>
-      </div>   
+      </section>
     </div>
-    </section>
-  </div>
     <section class="activities">
-      <h2>Activités à Marseille</h2><br>
+      <h2>Activités à Marseille</h2>
+      <br />
       <div class="flex-container" id="Activity">
-      <div class="Card" id="A1">
-        <div class="imageCard" id="image10">
+        <div class="Card" id="A1">
+          <div class="imageCard" id="image10"></div>
+          <div class="descriptionCard">
+            <h2>Vieux Port</h2>
+          </div>
         </div>
-        <div class="descriptionCard">
-          <h2>Vieux Port</h2>
+        <div class="Card" id="A2">
+          <div class="imageCard" id="image11"></div>
+          <div class="descriptionCard">
+            <h2>Fort de Pomègues</h2>
+          </div>
         </div>
-      </div>
-      <div class="Card" id="A2">
-        <div class="imageCard" id="image11">
-        </div>
-        <div class="descriptionCard">
-          <h2>Fort de Pomègues</h2>
-        </div>
-      </div>
-      <!-- <div class="Card" id="A3">
+        <!-- <div class="Card" id="A3">
         <div class="imageCard" id="image12">
         </div>
         <div class="descriptionCard">       
           <h2>Îles du Frioul</h2>
         </div>
       </div> -->
-      <div class="Card" id="A4">
-        <div class="imageCard" id="image13">
+        <div class="Card" id="A4">
+          <div class="imageCard" id="image13"></div>
+          <div class="descriptionCard">
+            <h2>Parc National des Calanques</h2>
+          </div>
         </div>
-        <div class="descriptionCard">
-          <h2>Parc National des Calanques</h2>
-        </div>  
-      </div>
-      <div class="Card" id="A5">
-        <div class="imageCard" id="image14">
+        <div class="Card" id="A5">
+          <div class="imageCard" id="image14"></div>
+          <div class="descriptionCard">
+            <h2>Notre-Dame-de-la-Garde</h2>
+          </div>
         </div>
-        <div class="descriptionCard">
-          <h2>Notre-Dame-de-la-Garde</h2>
-        </div>
-      </div>
-      <!-- <div class="Card" id="A6">
+        <!-- <div class="Card" id="A6">
         <div class="imageCard" id="image15">    
         </div>
         <div class="descriptionCard">    
@@ -346,7 +340,7 @@
     I
     I
     I
-    --> 
+    -->
 
     <footer>
       <div class="Flinks" id="aboutFooter">
@@ -372,6 +366,5 @@
         </ul>
       </div>
     </footer>
-
   </body>
-  </html>
+</html>
