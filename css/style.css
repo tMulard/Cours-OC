@@ -511,17 +511,15 @@ i {color : #0065fc;}
 	-webkit-flex-direction : column;
 	    -ms-flex-direction : column;
 	        flex-direction : column;
-	-webkit-box-align : space-around;
-	-webkit-align-items : space-around;
-	    -ms-flex-align : space-around;
-	        align-items : space-around;
+	        justify-content : space-between;
+			flex-wrap: wrap;
   }
   
 .activities {
 	margin-top: 50px;
 	margin: 1%;
 } 
-
+.activities > h2 {margin-left: 5%;}
 #Hotel {
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: distribute;
@@ -536,7 +534,7 @@ i {color : #0065fc;}
 	overflow: hidden;
 	width : 25%;
 	min-width : 100px;
-	padding : 5px;
+	padding : 5px 5px 0;
 	background-color: white;
 	margin : 10px;
 	-webkit-transition: .3s;
@@ -565,6 +563,7 @@ i {color : #0065fc;}
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	/* width : 90%; */
 }
 
 #Activity .Card {
@@ -572,7 +571,7 @@ i {color : #0065fc;}
 	min-width : 170px;
 }
 #Activity .Card:first-child {margin-left: 0;}
-#Activity .Card:last-child {margin-right: 0;}
+#A5 {margin-right: 0;}
 #Activity .Card .imageCard {
 	height :400px;
 }
@@ -632,29 +631,13 @@ i {color : #0065fc;}
 }
 
 .CardPopular {
-	display : -webkit-box;
-	display : -webkit-flex;
-	display : -ms-flexbox;
-	display : flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-border-radius : 20px;
-	        border-radius : 20px;
-	width : 90%;
-	min-width: 200px;
-	overflow : hidden;
-	padding : 5px;
+	padding: 5px;
+	border-radius: 20px;
+	overflow: hidden;
 	background-color: white;
-	margin : 10px;
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
-	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
-	        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
-	max-height : 40%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+	height: 144px;
+	margin-bottom: 10px;
 }
 
 .CardPopular:hover {
@@ -664,39 +647,30 @@ i {color : #0065fc;}
   }
   
   .imageCardPopular {
-	-webkit-border-top-left-radius : 20px;
-	        border-top-left-radius : 20px;
-	-webkit-border-bottom-left-radius : 20px;
-	        border-bottom-left-radius : 20px;
-	background-size : cover;
+	-webkit-border-top-left-radius: 20px;
+	border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-size: cover;
 	background-position: center;
-	/* min-width: 100px; */
-	/* min-height: 100px; */
-	width : 43%;
+	width: 35%;
+	height: 100%;
+	display: inline-block;
   }
   
   .descriptionCardPopular {
-	display : -webkit-box;
-	display : -webkit-flex;
-	display : -ms-flexbox;
-	display : flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: space-between;
-	-webkit-align-items: space-between;
-	    -ms-flex-align: space-between;
-	        align-items: space-between;
-	-webkit-border-top-right-radius : 20px;
-	        border-top-right-radius : 20px;
-	-webkit-border-bottom-right-radius : 20px;
-	        border-bottom-right-radius : 20px;
-	padding : 10px;
-	line-height : 20px;
-  }  
-
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height : 100%;
+}  
+.descriptionCardPopularContainer {
+	display : inline-block;
+	width : calc(65% - 5px);
+	vertical-align: top;
+	height : 100%;
+	padding : 5px;
+ }
 .prix {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -731,7 +705,7 @@ i {color : #0065fc;}
 .CardPopular .starRating {
 	display:inline-flex;
 	flex-direction: row;
-	padding-top: 30%;
+	
 }
 .flex-container {
 	display: -webkit-box;
@@ -750,7 +724,7 @@ i {color : #0065fc;}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	body {
-		width : 86%;
+		width : 95%;
 	}
 	.Hotels {
 		display : -webkit-box;
@@ -780,16 +754,13 @@ i {color : #0065fc;}
 		flex-direction: row;
 		align-items: center;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.housings #Hotel .Card {
-		margin : 1% 2% auto;
 		height : 30%;
-		width : 25%;
+		width : 30%;
 	}
-	.popularStar {
-		margin-top : 3%;
-		width : 98%;
-	}
+	
 	.PopularFlex {
 			display: -webkit-box;
 			display: -webkit-flex;
@@ -801,21 +772,13 @@ i {color : #0065fc;}
 			-ms-flex-direction: row;
 			flex-direction: row;
 			margin-bottom : 3%;
-			width : 98%;
+			justify-content: space-between;
 		}
-	.PopularFlex .CardPopular {max-height : 25%;}
-	
-	.descriptionCard h2, .descriptionCardPopular h2 {
+		.CardPopular {width: 30%;}
+
+	.descriptionCard h2, .descriptionCardPopular h2, .prix {
 			font-size: 80%;
-			margin : 1% 0;
-		}
-		.Card .prix {
-			font-size: 80%;
-			margin : 0 0 5%;
-		}
-		.CardPopular .prix {
-			font-size: 80%;
-			margin : 0 0 10%;
+			
 		}
 		
 		.activities #Activity {
@@ -831,6 +794,7 @@ i {color : #0065fc;}
 		-webkit-justify-content : space-between;
 		-ms-justify-content : space-between;
 		justify-content : space-between;
+		align-items: center;
 	}
 	.activities #Activity .Card {
 		width : 20%;
@@ -910,7 +874,7 @@ footer {
 	-webkit-box-pack: left;
 	-webkit-justify-content: left;
 	    -ms-flex-pack: left;
-	        justify-content: left; /*space-between;*/
+	        justify-content: space-between; /*space-between;*/
 	-webkit-box-orient : horizontal;
 	-webkit-box-direction : normal;
 	-webkit-flex-direction : row;
