@@ -439,10 +439,8 @@ i {color : #0065fc;}
 	-webkit-flex-direction : row;
 	    -ms-flex-direction : row;
 	        flex-direction : row;
-	-webkit-box-align: space-between;
-	-webkit-align-items: space-between;
-	    -ms-flex-align: space-between;
-	        align-items: space-between;
+	        justify-content: space-between;
+	width : 100%;
 }
 
 .housings {
@@ -463,8 +461,8 @@ i {color : #0065fc;}
 	-webkit-border-radius: 20px;
 	        border-radius: 20px;
 	padding : 20px 20px 0 20px;
-	margin: 1%;
-	width : 70%;
+	margin: 1% 0;
+	width : 75%;
 	flex-wrap: wrap;
 }
 .Hotels > .housings > h2 {
@@ -481,7 +479,9 @@ i {color : #0065fc;}
 	-webkit-border-radius: 20px;
 	        border-radius: 20px;
 	padding : 20px 20px 0 20px;
-	margin: 1%;
+	margin-right: 0;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 .popularStar {
 	display : -webkit-box;
@@ -517,9 +517,9 @@ i {color : #0065fc;}
   
 .activities {
 	margin-top: 50px;
-	margin: 1%;
+	margin-bottom : 75px;
 } 
-.activities > h2 {margin-left: 5%;}
+.activities > h2 {margin-left: 1%;}
 #Hotel {
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: distribute;
@@ -563,18 +563,16 @@ i {color : #0065fc;}
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	/* width : 90%; */
 }
 
 #Activity .Card {
 	width : 23%;
 	min-width : 170px;
+	padding : 0;
 }
 #Activity .Card:first-child {margin-left: 0;}
 #A5 {margin-right: 0;}
-#Activity .Card .imageCard {
-	height :400px;
-}
+#Activity .Card .imageCard {height :400px;}
 
 .imageCard {
 	background-size: cover;
@@ -746,7 +744,7 @@ i {color : #0065fc;}
 		-webkit-justify-content: space-between;
 		-ms-flex-align: space-between;
 		justify-content: space-between;
-		width : 98%;
+		width : 100%;
 		margin-bottom : 53px;
 	}
 	#Hotel {
@@ -832,14 +830,17 @@ i {color : #0065fc;}
 	.housings {
 		margin : 1% auto;
 		width : 100%;
-		background: #F0F2F6;
+		background: none;
 	}
 	.housings .Card {
 		margin : 1% auto;
 		width : 100%;
 	}
-	.popular {border-radius: 20px;}
-	.activities > h2 {margin-top : 100px;}
+	.popular {border-radius: 0;}
+	.activities > h2 {
+		margin-top : 100px;
+		margin-left: 5%;
+	}
 	#Activity {
 		width : 90%;
 		margin: 0 5%;
@@ -874,7 +875,7 @@ footer {
 	-webkit-box-pack: left;
 	-webkit-justify-content: left;
 	    -ms-flex-pack: left;
-	        justify-content: space-between; /*space-between;*/
+	        justify-content: space-between;
 	-webkit-box-orient : horizontal;
 	-webkit-box-direction : normal;
 	-webkit-flex-direction : row;
