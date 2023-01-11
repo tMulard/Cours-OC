@@ -13,6 +13,7 @@ sous-titre: Arial Bold 25px
 texte: Arial 15px
 
 */
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -439,7 +440,10 @@ i {color : #0065fc;}
 	-webkit-flex-direction : row;
 	    -ms-flex-direction : row;
 	        flex-direction : row;
-	        justify-content: space-between;
+	        -webkit-box-pack: justify;
+	        -webkit-justify-content: space-between;
+	            -ms-flex-pack: justify;
+	                justify-content: space-between;
 	width : 100%;
 }
 
@@ -456,14 +460,18 @@ i {color : #0065fc;}
 	-webkit-box-align: space-between;
 	-webkit-justify-content: space-between;
 	    -ms-flex-align: space-between;
-	        justify-content: space-between;
+	        -webkit-box-pack: justify;
+	            -ms-flex-pack: justify;
+	                justify-content: space-between;
 	background-color: #F2F2F2;
 	-webkit-border-radius: 20px;
 	        border-radius: 20px;
 	padding : 20px 20px 0 20px;
 	margin: 1% 0;
 	width : 75%;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .Hotels > .housings > h2 {
 	margin-top : 2%;
@@ -511,8 +519,13 @@ i {color : #0065fc;}
 	-webkit-flex-direction : column;
 	    -ms-flex-direction : column;
 	        flex-direction : column;
-	        justify-content : space-between;
-			flex-wrap: wrap;
+	        -webkit-box-pack : justify;
+	        -webkit-justify-content : space-between;
+	            -ms-flex-pack : justify;
+	                justify-content : space-between;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
   }
   
 .activities {
@@ -523,8 +536,11 @@ i {color : #0065fc;}
 #Hotel {
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: distribute;
+	        -webkit-box-pack: justify;
 	        justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 .Card {
@@ -630,10 +646,12 @@ i {color : #0065fc;}
 
 .CardPopular {
 	padding: 5px;
-	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
 	overflow: hidden;
 	background-color: white;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+	        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 	height: 144px;
 	margin-bottom: 10px;
 }
@@ -657,13 +675,24 @@ i {color : #0065fc;}
   }
   
   .descriptionCardPopular {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	height : 100%;
 }  
 .descriptionCardPopularContainer {
 	display : inline-block;
+	width : -webkit-calc(65% - 5px);
 	width : calc(65% - 5px);
 	vertical-align: top;
 	height : 100%;
@@ -696,13 +725,27 @@ i {color : #0065fc;}
 }
 
 .starRating {
+	display:-webkit-inline-box;
+	display:-webkit-inline-flex;
+	display:-ms-inline-flexbox;
 	display:inline-flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .CardPopular .starRating {
+	display:-webkit-inline-box;
+	display:-webkit-inline-flex;
+	display:-ms-inline-flexbox;
 	display:inline-flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	
 }
 .flex-container {
@@ -713,7 +756,11 @@ i {color : #0065fc;}
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 #Hplus {
@@ -743,16 +790,33 @@ i {color : #0065fc;}
 		-webkit-box-align: space-between;
 		-webkit-justify-content: space-between;
 		-ms-flex-align: space-between;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		width : 100%;
 		margin-bottom : 53px;
 	}
 	#Hotel {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 	.housings #Hotel .Card {
 		height : 30%;
@@ -770,7 +834,10 @@ i {color : #0065fc;}
 			-ms-flex-direction: row;
 			flex-direction: row;
 			margin-bottom : 3%;
-			justify-content: space-between;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 		}
 		.CardPopular {width: 30%;}
 
@@ -791,8 +858,13 @@ i {color : #0065fc;}
 		flex-direction: row;
 		-webkit-justify-content : space-between;
 		-ms-justify-content : space-between;
-		justify-content : space-between;
-		align-items: center;
+		-webkit-box-pack : justify;
+		    -ms-flex-pack : justify;
+		        justify-content : space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 	.activities #Activity .Card {
 		width : 20%;
@@ -836,7 +908,7 @@ i {color : #0065fc;}
 		margin : 1% auto;
 		width : 100%;
 	}
-	.popular {border-radius: 0;}
+	.popular {-webkit-border-radius: 0;border-radius: 0;}
 	.activities > h2 {
 		margin-top : 100px;
 		margin-left: 5%;
